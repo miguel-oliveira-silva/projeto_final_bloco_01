@@ -1,19 +1,19 @@
 package projeto_final_bloco_01.model;
 
-public class GameDigital {
-	String chaveAtivacao;
+public class GameDigital extends Game {
+	String plataformaDigital;
 
-	public GameDigital(String chaveAtivacao) {
-		super();
-		this.chaveAtivacao = chaveAtivacao;
+	public GameDigital(int id, String nome, double preco, int restricaoIdade, String plataformaDigital, int tipo) {
+		super(id, nome, preco, restricaoIdade, tipo);
+		this.plataformaDigital = plataformaDigital;
 	}
 
-	public String getChaveAtivacao() {
-		return chaveAtivacao;
+	public String getPlataformaDigital() {
+		return plataformaDigital;
 	}
 
-	public void setChaveAtivacao(String chaveAtivacao) {
-		this.chaveAtivacao = chaveAtivacao;
+	public void setPlataformaDigital(String plataformaDigital) {
+		this.plataformaDigital = plataformaDigital;
 	}
 	
 }
