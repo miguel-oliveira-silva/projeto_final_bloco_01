@@ -15,5 +15,9 @@ public class GameDigital extends Game {
 	public void setPlataformaDigital(String plataformaDigital) {
 		this.plataformaDigital = plataformaDigital;
 	}
-	
+	public void visulaizar() {
+		super.visualizar();
+		System.out.println("A plataforma digital desse jogo é: " + plataformaDigital);
+		
+	}
 }

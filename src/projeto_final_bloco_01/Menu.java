@@ -107,11 +107,11 @@ public class Menu {
 	}
 
 	public static void cadastrarGame() {
-		System.out.println("Digite o número do jogo: ");
+		System.out.println("Digite o nome do jogo: ");
 		String nome = leia.nextLine();
 		
 		System.out.println("Digite o preço do jogo: ");
-		float preco = leia.nextFloat();
+		double preco = leia.nextDouble();
 		leia.skip("\\R");
 		
 		System.out.println("Digite a restrição de idade do jogo: ");
@@ -119,7 +119,7 @@ public class Menu {
 		
 		System.out.println("Digite o tipo de jogo (1 - Fisíco | 2 - Digital): ");
 		int tipo = leia.nextInt();
-
+		leia.skip("\\R");
 		switch (tipo) {
 		case 1 -> {
 			boolean novo;
@@ -218,7 +218,6 @@ public class Menu {
 				case 1 ->{
 					GameFisico gameFisico = (GameFisico) game.get();
 					boolean novo = gameFisico.getNovo();
-					String novoString;
 					// Atualiza o limite ou mantém o valor atual
 					System.out.printf("Ele é novo: %b"
 							+ "%nDigite y para mudar a condição (Pressione ENTER para manter o valor atual)", novo);

@@ -15,4 +15,14 @@ public class GameFisico extends Game{
 	public void setNovo(boolean novo) {
 		this.novo = novo;
 	} 
+	public void visulaizar() {
+		super.visualizar();
+		String novoString;
+		if(novo) {
+			novoString = "novo";
+		}else {
+			novoString = "usado";
+		}
+		System.out.println("O estado do jogo físico é: " + novoString);
+	}
 }

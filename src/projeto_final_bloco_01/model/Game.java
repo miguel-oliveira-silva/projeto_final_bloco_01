@@ -48,6 +48,7 @@ public abstract class Game{
 	}
 	public void visualizar() {
 		System.out.println("O nome do jogo é: "+nome);
+		System.out.println("seu id é : "+id);
 		System.out.println("Seu preco é: "+preco);
 		System.out.println("Esse jogo somente é permitido para +"+restricaoIdade);
 		switch (tipo) {
@@ -55,5 +56,6 @@ public abstract class Game{
 		case 2 -> System.out.println("Jogo Digital");
 		default -> System.out.println("Inválido");
 		}
+		System.out.println("\n \n");
 	}
 }

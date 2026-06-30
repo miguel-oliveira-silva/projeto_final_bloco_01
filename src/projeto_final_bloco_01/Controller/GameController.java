@@ -20,7 +20,7 @@ public class GameController implements GameRepository{
 	@Override
 	public void cadastrar(Game game) {
 		listaGames.add(game);
-		System.out.printf("O jogo %s com número %d %n",game.getNome(), game.getId());
+		System.out.printf("O jogo: %s ID: %d cadastrado com sucesso%n",game.getNome(), game.getId());
 	}
 
 	@Override
